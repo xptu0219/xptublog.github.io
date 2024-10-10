@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来仙界AI助手</title>
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 引入Three.js库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="ai-assistant-container"></div>
+    
+    <!-- 背景粒子效果 -->
+    <div class="particles"></div>
+    <!-- 主要内容容器 -->
+    <div class="container">
+        <header>
+            <h1>未来仙界AI助手</h1>
+        </header>
+        <main>
+            <!-- 聊天窗口 -->
+            <div class="chat-window">
+                <div id="chat-history">
+                    <!-- 这里添加一些示例消息，确保有足够的内容可滚动 -->
+                    <div class="message user-message">用户消息示例</div>
+                    <div class="message ai-message">AI助手回复示例</div>
+                    <!-- 重复多次以创建足够的内容 -->
+                </div>
+            </div>
+            <!-- 输入区域 -->
+            <div class="input-area">
+                <textarea id="user-input" placeholder="请输入您的问题..."></textarea>
+                <button id="send-btn">
+                    <span class="btn-text">发送</span>
+                    <span class="btn-icon">➤</span>
+                </button>
+            </div>
+        </main>
+    </div>
+    <!-- 引入JavaScript文件 -->
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
